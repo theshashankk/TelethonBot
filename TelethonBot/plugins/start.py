@@ -1,7 +1,7 @@
 from .. import BotzHub
 from telethon import events, Button
 
-@BotzHub.on(event.NewMessage(incoming=True, pattern="/start"))
+@BotzHub.on(events.NewMessage(incoming=True, pattern="/start"))
 async def startvro(event):
   but = [[Button.url('Creator 💜', "t.me/Albertt_xD")]]
   but += [[Button.inline('Utils', data="utttils")]]
